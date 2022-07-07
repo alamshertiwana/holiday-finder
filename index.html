@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Holiday Finder</title>
+    <meta name="description" content="Find your next dream holiday with hotel finder.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+    <link href="./assets/css/all.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="assets/background.jpg">    
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="logo"><strong>Holiday Finder</strong></div>
+                <nav class="main-nav">
+                    <ul class="main-menu">
+                        <li><a href="#">Find Your Holiday</a></li>
+                        <li><a href="#">Popular Locations</a></li>
+                        <li><a href="#">Log In</a></li>
+                    </ul>
+                </nav>
+                <div class="button-wrapper">
+                    <a href="#" class="menu-button black-button">Create An Account <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        
+        <div class="container jumbo">
+            <div class="row">
+                <div class="col">
+                    <h1 class="jumbo-title">Ready to find your next dream holiday?</h1>
+                    <a href="#" class="jumbo-button black-button">Get Started <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container search-container">
+            <div class="row search-row">
+
+                <div class="col">
+                    <h2 class="search-title">Location</h2>
+                    <div class="input-group">
+                        <div class="icon-prepend">
+                            <i class="fa-solid fa-location-arrow"></i>
+                        </div>
+                        <input type="text" id="location" name="location" placeholder="Location">
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 class="search-title">Nights</h2>
+                    <div class="input-group">
+                        <div class="icon-prepend">
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <input type="text" id="nights" name="nights" placeholder="Nights">
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 class="search-title">People</h2>
+                    <div class="input-group">
+                        <div class="icon-prepend">
+                            <i class="fa-solid fa-user-large"></i>
+                        </div>
+                        <input type="text" id="people" name="people" placeholder="People">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <button class="menu-button search-button" aria-label="Search"><i class="fa-solid fa-search"></i></button>
+                </div>
+
+
+            </div>
+        </div>
+        
+    </main>
+
+</body>
+
+</html>

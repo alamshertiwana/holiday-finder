@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 400;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 56px 0px;
+}
+
+.row {
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 27px 0px;
+}
+
+button,.black-button {
+    background: #000;
+    padding: 10px 24px;
+    color: #fff;
+    border-radius: 100px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 300;
+    transition: 0.5s;
+}
+
+.black-button:hover {
+    box-shadow: inset 0 4em 0 0 #fff;
+    color: #000;
+}
+
+.black-button i{
+    margin-left:10px;    
+}
+
+/*Header*/
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(8px);
+}
+
+header .container {
+    padding: 0px;
+}
+
+header .container .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+header * {
+    color: #fff;
+}
+
+header ul.main-menu {
+    list-style: none;
+    font-weight: 300;
+    padding-left:0px;
+
+}
+
+header ul.main-menu li {
+    display: inline-block;
+    position: relative;
+    margin-right: 15px;
+}
+
+
+header ul.main-menu li a {
+    text-decoration: none;    
+}
+
+header ul.main-menu li a:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 100%;
+    bottom: -5px;
+    background: #fff;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+header ul.main-menu li a:hover:before {
+    right: 0;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .button-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/*Jumbo*/
+main .jumbo {
+    background: url('assets/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+main .jumbo .row {
+    padding-top: 10vw;
+    padding-bottom: 10vw;
+}
+
+main .jumbo h1.jumbo-title {
+    color: #fff;
+    font-size: 46px;
+    text-shadow: 0px 3px 0px #000;
+    max-width: 600px;
+    line-height: 1em;
+    margin-bottom: 50px;
+}
+
+.jumbo .jumbo-button {
+    padding: 14px 24px;
+    margin-top: 20px;
+}
+
+/*Search*/
+main .search-container {
+    padding-top: 0px;
+}
+
+main .search-row .col {
+    width: 25%;
+    margin-right: 4%;
+}
+
+main .search-row .col:last-child {
+    margin-right: 0px;
+    width: 13%;
+    align-items: self-end;
+    display: flex;
+}
+
+.search-title {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+}
+
+.icon-prepend {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+
+.input-group input {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    padding-left: 10px;
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: auto;
+    border: 0px;
+    font-size: 16px;
+}
+
+.input-group input:focus-visible {
+    outline: 0;
+}
+
+.input-group input::placeholder {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.search-row .search-button {
+    padding: 14px;
+}
+
+
+@media (max-width: 576px) { 
+    header .container .row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header ul.main-menu li{
+        display:block;
+        margin-bottom: 10px;
+        margin-right: 0px;
+        text-align: center;
+    }
+    
+    main .jumbo{
+        padding-top:210px;
+    }
+
+    main .search-row .col {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom:20px;
+    }    
+}
